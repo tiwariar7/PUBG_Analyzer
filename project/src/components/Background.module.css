@@ -1,0 +1,30 @@
+.backgroundContainer {
+    background-image: url('../assets/Bg.webp'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows layering */
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.4); /* Optional: Adds a dark overlay for text visibility */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .content {
+    color: white; /* Text color */
+    font-size: 2rem;
+    z-index: 2; /* Content above the overlay */
+    text-align: center;
+  }
+  
